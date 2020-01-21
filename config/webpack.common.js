@@ -19,9 +19,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 exclude: [/node_modules/],
-                use: [{ loader: "babel-loader" }]
+                use: [{ loader: "babel-loader" }, { loader: "ts-loader" }]
             },
             {
                 test: /.*\.(gif|png|jp(e*)g|svg)$/i,
@@ -53,6 +53,6 @@ module.exports = {
         }),
     ],
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
 }

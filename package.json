@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config=config/webpack.dev.js --hot",
+    "lint": "npx eslint --quiet src/**/*.ts{,x}",
     "start:reload": "webpack-dev-server --config=config/webpack.dev.js",
     "start:style": "cross-env MAP_STYLE=true webpack-dev-server --config=config/webpack.dev.js --hot",
     "build": "webpack --config=config/webpack.prod.js",
@@ -21,14 +22,14 @@
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@babel/core": "^7.8.3",
+    "@captalys-platform/eslint-config-captalys-platform": "^0.0.8",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.5",
+    "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
+    "css-loader": "^3.4.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
@@ -39,6 +40,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "react-test-renderer": "^16.4.1",
     "style-loader": "^0.21.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
     "url-loader": "^1.0.1",
     "webpack": "^4.16.0",
     "webpack-bundle-analyzer": "^2.13.1",
@@ -55,5 +58,8 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css)$": "<rootDir>/src/utils/empty-module.js"
     }
+  },
+  "eslintConfig": {
+    "extends": "@captalys-platform/eslint-config-captalys-platform"
   }
 }
