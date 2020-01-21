@@ -165,6 +165,11 @@
     eslint-plugin-react "^7.17.0"
     eslint-plugin-react-hooks "^2.3.0"
 
+"@captalys-platform/prettier-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@captalys-platform/prettier-config/-/prettier-config-0.0.1.tgz#23d1c90a3d103916a7232df92dad0c3d3040dec4"
+  integrity sha512-1zbyZ+89IcXup+qu3Oma+oWYG2UmR5/m+gdx0+yJSdx2fnk7T8PjsBBCQq2YJvWYr68Oto9yWp+yIkli3x23eA==
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
